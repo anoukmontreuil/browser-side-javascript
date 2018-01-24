@@ -65,6 +65,7 @@ function startGame() {
     function startRound() {
 
         let ticklerPressCount = 0;
+        let gameIsOver = false; // Required to stop message of cheat behavior after the game outcome has already been determined.
 
         // *** IN-ROUND EVENT LISTENERS ************************************************
         bawd.addEventListener("click", event => {
@@ -73,7 +74,7 @@ function startGame() {
         });
 
         bawd.addEventListener("keydown", event => {
-            if (event.key === " " || event.key === "Enter") {
+            if (!gameIsOver && (event.key === " " || event.key === "Enter")) {
                 playerCheated = true;
                 playerWins = false;
                 checkOutcome();
@@ -103,6 +104,7 @@ function startGame() {
         }
 
         function checkOutcome() {
+            gameIsOver = true;
             ticklerButton.style.visibility = "Hidden";
             if (playerCheated) {
                 divvy.innerText = MSG_PLAYER_CHEATED;
