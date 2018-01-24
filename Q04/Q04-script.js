@@ -15,9 +15,9 @@ const RESPONSE_DELAY = 500 // milliseconds
 
 const bawd = document.querySelector("#bawd");
 const divvy = document.querySelector("#divvy");
+const restartDivvy = document.querySelector("#restartDivvy");
 
 const btn = document.createElement("button");
-btn.style.position = "absolute";
 btn.style.fontSize = '2em';
 btn.style.padding = '0.5em';
 btn.innerText = "Start The Test!";
