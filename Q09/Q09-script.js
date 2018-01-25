@@ -44,7 +44,7 @@ utilityButtons.forEach((button, buttonIndex) => {
     button.style.fontSize = "2em";
     button.style.padding = "1em";
     button.addEventListener("click", buttonIndex === 0 ? startGame : resetGame);
-    button.innerText = buttonIndex === 0 ? "Start Game!" : "Restart Game!";
+    button.innerText = buttonIndex === 0 ? "Start Game!" : "Reload";
 });
 
 let winner;
