@@ -1,0 +1,103 @@
+body {
+    background-color: #A00;
+    font-family: "Bangers", sans-serif;
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+img {
+    max-width: 150px;
+    width: 100%;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #333;
+    font-family: "Bangers", sans-serif;
+    font-size: 1.5em;
+    color: #FC0;
+}
+
+h2 {
+    color: #500;
+}
+
+p {
+    color: #DDD;
+}
+
+span {
+    color: #FF0;
+}
+
+.instructions {
+    width: 33%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.gameHeader {
+    font-size: 4em;
+    background-color: #C00;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.playerInstructions {
+    background-color: #C00;
+}
+
+#playerOne {
+    width: 20%;
+    text-align: center;
+}
+
+#playerOneKeyInstructions {
+    color: #FC0;
+}
+
+#playerTwo {
+    width: 20%;
+    text-align: center;
+}
+
+#playerTwoKeyInstructions {
+    color: #FC0;
+}
+
+#spacer {
+    width: 15%;
+}
+
+#battleArea {
+    width: 40%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#divvy {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #FF0;
+}
+
+#restartDivvy {
+    margin-top: 20px;
+}
